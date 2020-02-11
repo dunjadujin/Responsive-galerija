@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="description" content="Responsive gallery">
+     <meta name="author" content="Dunja Dujin"> 
+     <style>
+        .grid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        max-width: 1050px;
+        margin: 0 auto;
+     }
+      
+       .grid1::after {
+        content: '';
+        display: block;
+        clear: left;
+     }
+   
+       .column {
+        float: left;
+        padding: 8px;
+     }
+
+     .box  {
+          background-color: blue;
+          background-image: url(placeholder-image.png);
+     }
+
+     img {
+      max-width: 100%;
+     }
+
+     .title-box {
+      border: 1px solid black;
+      background-color: grey;
+      color: white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+     }
+   
+     @media screen and (max-width: 1024px) {
+      .grid1 {
+       grid-template-columns: 1fr 1fr 1fr;
+      }
+     }      
+  
+     @media screen and (max-width: 768px) {
+      .grid1 {
+       grid-template-columns: 1fr 1fr;
+      }
+     }      
+ 
+     @media screen and (max-width: 414px) {
+       .grid1 {
+       grid-template-columns: 1fr ;
+      }
+      }
+     }
+     </style>
+  </head>
+  <body>
+     <h1>Gallery Heading</h1>
+     <br>
+      <div class="grid1">
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+ 
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+
+     <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box"> 
+            <img src="placeholder-image.png" alt="" >
+        </div>
+        <div class="title-box"> 
+              <p>Image title</p>
+        </div>
+      </div>
+
+     </div>
+     <br>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a licinia nisi, nec tristique sem. Cras id tellus ac mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod purus, ut lobortis fortor semper a. Nam eleifend accumsan elit, in elementum lacus. Nunc varius imperdiet nisi, eget pratium augue molestie a. Nullam ut malesuada enim. Interger non velit fringilla, porta ex vitae, porttitor velit. Ut luctus lacinia libero a scelerisque. Ut allamcorper arcu at mauris ullamcorper tempor.</p>
+  </body>
+</html>                        
